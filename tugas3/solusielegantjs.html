@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Belajar JavaScript</title>
+    <script>
+        //Cara ini untuk mencegah terjadi error seperti sebelumnya dengan memanfaatkan event onload yaitu ketika semua file html terload semua.
+        // Materi event akan dipelajari di bab selanjutnya.
+        window.onload = function () {
+            var a = document.getElementById("div_semangat");
+            a.innerHTML = "<p>Sedang Belajar JavaScript,Semangat...!!!</p > ";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+    <div id="div_semangat"></div>
+</body>
+
+</html>

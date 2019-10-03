@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+charset=UTF-8" />
+    <title>Belajar JavaScript</title>
+
+    <script>
+        /* Scope variable adalah jangkauan atau area mana saja yang dapat mengakses variable. Di javascript apabila membuat variable diluar fungsi
+        baik menggunakan keyword var atau tanpa var maka akan menjadi global variabel atau dapat diakses dimana saja variabelnya baik di dalam maupun
+        diluar fungsi sedangkan apabila membuat variable di dalam fungsi dengan keywoard var maka akan lokal atau hanya diakses di fungsi itu
+        sendiri tetapi apabila tanpa var maka variabel akan menjadi global atau dapat diakses dimana saja.
+        */
+        var nilai = "global";
+        function test() {
+            var nilai = "lokal";
+            var nilai_lokal = "jti.polije";
+            tanpa_var = "no_scope"; //akan menjadi global variabel!!
+            console.log(nilai);
+        }
+        test(); // print: lokal
+        console.log(nilai); // print: global
+        console.log(tanpa_var); //print: no_scope (bisa diakses)
+        console.log(nilai_lokal); //error, karena nilai_lokal adalah
+    </script>
+
+</head>
+
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+charset=UTF-8" />
+    <title>Belajar JavaScript</title>
+    <script>
+        // window.onload adalah event ketika semua tag html selesai di load semua.
+        window.onload = function () {
+        // Membuat variabel hasil dan divariabel hasil ditampung hasil penjumlahan. Dijavascript untuk membuat variabel didahului dengan keyword var. 
+            var hasil;
+            hasil = 1 + 3 + 5 + 7 + 9;
+        // mencari tag html yang memiliki id 'tempat_hasil' lalu memasukkan nilai variabel hasil ke dalamnya.
+            document.getElementById("tempat_hasil").innerHTML = hasil;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+    <div id="tempat_hasil">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+charset=UTF-8" />
+    <title>Belajar JavaScript</title>
+
+    <script>
+    /*String.length merupakan property satu-satunya untuk objek String. Property ini akan mengembalikan nilai panjang karakter dari sebuah String. */
+    var situs = "jti.polije";
+    console.log(situs.length); // 10
+    var belajar = "belajar javascript";
+    console.log(belajar.length); // 18
+
+    /*Method String.charAt() berfungsi untuk mengambil sebuah karakter dari String. Method ini membutuhkan 1 buah argumen angka yang diisi dengan
+     posisi karakter yang akan diambil, dimulai dari urutan 0 untuk karakter pertama, urutan 1 untuk karakter kedua, dan seterusnya.*/
+    var situs = "jti.polije";
+    console.log(situs.charAt(0)); // d
+    console.log(situs.charAt(5)); // i
+    console.log(situs.charAt(7)); // k
+    console.log(situs.charAt(11)); // string kosong
+    
+    /*Method String.charCodeAt() berfungsi untuk mengambil nilai Unicode karakter dari String. Method ini membutuhkan 1 buah argumen angka yang
+     diisi dengan posisi karakter yang akan diambil, dimulai dari urutan 0 untuk karakter pertama, urutan 1 untuk karakter kedua, dan seterusnya. */
+    var situs = "jti.polije";
+    console.log(situs.charCodeAt(0)); // 100
+    console.log(situs.charCodeAt(5)); // 105
+    console.log(situs.charCodeAt(7)); // 107
+    console.log(situs.charCodeAt(11)); // NaN
+
+    /*Method String.concat() berfungsi untuk operasi penyambungan String. Method ini membutuhkan 1 atau lebih argumen bertipe String untuk disambung. */
+    var situs = "jti.polije";
+    console.log(situs.concat(" oke")); // jti.polije oke
+    console.log(situs.concat(" situs", " belajar", "javaScript")); // jti.polije situs belajar javaScript
+
+    var situs = "jti.polije";
+    console.log(situs.indexOf("k")); // 7
+    console.log(situs.indexOf("i")); // 3
+    console.log(situs.indexOf("i",4)); // 5 (pencarian dimulai dari karakter ke-5)
+
+    /*Method String.indexOf() berfungsi untuk mencari karakter atau kata dalam sebuah String. Method ini membutuhkan 2 argumen: 1 argumen bertipe
+     String yang diisi dengan karakter yang akan dicari, serta 1 buah argumen opsional yang berfungsi untuk menandai posisi awal pencarian.
+      Jika argumen kedua tidak diisi, maka pencarian akan dimulai dari awal String.
+*/
+    var belajar = "Saya sedang belajar javaScript di jti.polije.com";
+    console.log(belajar.indexOf("sedang")); // 4 
+    // (pencarian dimulai dari karakter ke-18)
+    console.log(belajar.indexOf("ja",17)); // 20
+    console.log(belajar.indexOf("php")); // -1 (tidak ditemukan)
+
+    /*Method String.localeCompare() berfungsi untuk membandingkan 2 buah string. Method ini membutuhkan 1 buah argumen bertipe string yang berisi
+     string yang akan dibandingkan. Jika String asal ‘kurang dari’ string argumen, method ini akan mengembalikan nilai <0, Jika String asal
+    ‘lebih dari’ string argumen, method ini akan mengembalikan nilai >0, dan akan mengembalikan 0 jika string tersebut sama.*/
+    var c = "c";
+    console.log(c.localeCompare("c")); // 0
+    console.log(c.localeCompare("a")); // 1
+    console.log(c.localeCompare("d")); // -1
+    var kota = "Jakarta";
+    console.log(kota.localeCompare("jakarta")); // 1 (case sensitif)
+    console.log(kota.localeCompare("padang")); // -1
+    console.log(kota.localeCompare("bandung")); // 1
+
+    // Masih banyak lagi fungsi String lainnya.
+    </script>
+
+</head>
+
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p> Saya sedang belajar String JavaScript </p>
+    </div>
+</body>
+
+</html>
